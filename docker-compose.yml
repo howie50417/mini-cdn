@@ -1,10 +1,11 @@
 version: '3'
 
 services:
-  node-app:
+  mini-cdn:
     image: node:16
     working_dir: /usr/src/app
     command: sh -c "npm install && node index.js"
+    restart: always
     volumes:
       - .:/usr/src/app
     ports:
