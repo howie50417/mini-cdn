@@ -2,7 +2,7 @@ version: '3'
 
 services:
   mini-cdn:
-    image: node:16
+    image: node:20
     working_dir: /usr/src/app
     command: sh -c "npm install && node index.js"
     restart: always
